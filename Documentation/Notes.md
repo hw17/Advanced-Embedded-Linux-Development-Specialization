@@ -18,3 +18,14 @@ File permission:
   values: 4=read, 2=write, 1=execute
   - example: 634 means owner can r and w, group can w and x, everyone can r.
   - example 1: chmod 766 file -> owner can r,w & x, group can r&w and everyone can r&w
+
+
+assigment 1:
+
+https://cvw.cac.cornell.edu/linux/intro/index 
+
+Linux System Programming Chapter 1.
+
+https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
+ 
+https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
