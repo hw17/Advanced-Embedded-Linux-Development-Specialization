@@ -29,3 +29,20 @@ Linux System Programming Chapter 1.
 https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
  
 https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php
+
+
+Links to books
+
+Linux System Programming, 2nd Edition
+
+https://docs.google.com/file/d/0B2dlGZ_3bOSvQ0luWWl3V0NyVUE/edit?resourcekey=0-2UKmsobQOmkhD-b6kijJPg
+
+Mastering Embedded Linux Programming, 2nd Edition (MELP)
+
+https://github.com/PacktPublishing/Mastering-Embedded-Linux-Programming-Second-Edition
+
+Linux Device Drivers 3rd Edition (LDD)
+
+https://github.com/lancetw/ebook-1/blob/master/03_operating_system/Linux%20Device%20Drivers.3rd.Edition.pdf
+
+https://class.ece.iastate.edu/cpre488/resources/ldd3.pdf
