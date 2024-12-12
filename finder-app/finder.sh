@@ -24,22 +24,18 @@ filesdir=$1
 searchstr=$2
 
 # Check if the correct number of arguments is provided
-if [ "$#" -ne 2 ]; then
+if [ -z "$filesdir" ] || [ -z "$searchstr" ]; then
     echo "Error! Two arguments required: $0 <path_to_file> <text_string>"
     exit 1
 fi
 
 # Check if the provided path is a directory 
-if [ ! -d "$filesdir" ]; 
+if [ -d "$filesdir" ]; 
     then 
-        echo "Error: $filesdir is not a directory." 
-        exit 1 
+        # Count number of files, number of matching lines and printing result 
+        echo "The number of files are $(find "$filesdir" -type f | wc -l) \
+        and the number of matching lines are $(grep -r "$searchstr" "$filesdir" | wc -l)" 
+        exit 0 
+    else
+        exit 1
 fi 
-
-# Count number of files and number of matching lines 
-file_count=$(find "$filesdir" -type f | wc -l) 
-matching_lines=$(grep -r "$searchstr" "$filesdir" 2>/dev/null | wc -l) 
-
-# Printing result 
-echo "Number of files: $file_count " 
-echo "Matching lines numbers: $matching_lines"
